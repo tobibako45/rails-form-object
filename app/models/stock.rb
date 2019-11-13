@@ -52,7 +52,9 @@ class Stock
     false
   end
 
+  # 応答エラーを割り当てます(response)
   def assign_response_errors(response)
+
     error_code = JSON.parse(response.body)['error_code']
 
     error_massage =
