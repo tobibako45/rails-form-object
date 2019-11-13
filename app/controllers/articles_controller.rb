@@ -16,6 +16,12 @@ class ArticlesController < ApplicationController
     # @articles = scope
 
     # フォームクラスを利用
+    #
+    # このようなArticleSearchFormを利用する際には、フォーム画面でform_withヘルパーなどを利用して、
+    # params[:keyword]ではなく、
+    # params[:search][:keyword]、params[:search][:draft]というように、
+    # １つのキーの下に、まとめられるようにします。
+    # そうすることで、コントローラで次のように一括代入できます。
     @search_form = ArticleSearchForm.new(params[:search])
     @articles = @search_form.search
   end

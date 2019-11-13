@@ -47,5 +47,12 @@ class CouponExchangesController < ApplicationController
     end
   end
 
+  # def resume_form_params
+  #   params.require(:student).permit(
+  #       :introduction, :admission, :graduate,
+  #       job_histories_attributes: [:start_date, :end_date, :company_name, :position, :content,:id, :_destroy],
+  #       education_histories_attributes: [:start_date, :end_date, :school_name, :major_name, :id, :_destroy],
+  #       portfolios_attributes: [:service_name, :service_url, :service_content,:id, :_destroy])
+  # end
 
 end
