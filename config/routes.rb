@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   resources :feedbacks, only: %i(index new create)
   resources :contacts, only: %i(index new create)
 
-  resources :orders do
-    get :report, on: :menber
-  end
+  # resources :orders do
+  #   get :report, on: :menber
+  # end
 
 end

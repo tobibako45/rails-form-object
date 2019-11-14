@@ -28,11 +28,10 @@ class User < ApplicationRecord
   # end
 
 
+  #### モジュール練習 ########################
+  include Talkable
 
-
-
-
-
+  attr_accessor :name, :latitude, :longitude
 
 
 end
